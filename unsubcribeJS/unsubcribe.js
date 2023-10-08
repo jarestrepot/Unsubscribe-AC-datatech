@@ -14,7 +14,7 @@ const unsubscribeCallback = (evento) => {
   evento.target.setAttribute('disabled', '')
 }
 document.getElementById('bajaACdatatech').addEventListener('click', unsubscribeCallback)
-const API_AC = 'http://localhost:3003/client/unsubscribe'
+const API_AC = 'https://acdatatech.1.ie-1.fl0.io/client/unsubscribe'
 
 const fechingUnsubcribe = (token) => {
   conatinerMain.classList.add('opacity-50')
@@ -31,7 +31,6 @@ const fechingUnsubcribe = (token) => {
       }
     })
     .catch((error) => {
-      console.log('Error ❌ ', error)
       activeModal('No encontrado!!')
     })
 }
