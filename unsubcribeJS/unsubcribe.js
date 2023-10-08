@@ -27,7 +27,7 @@ const fechingUnsubcribe = (token) => {
   })
     .then((response) => {
       if (response.ok) {
-        activeModal('Response ok usuario eliminado!!')
+        activeModal('Usuario eliminado!!')
       }
     })
     .catch((error) => {
