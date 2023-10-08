@@ -33,6 +33,10 @@ const fechingUnsubcribe = (token) => {
     .catch((error) => {
       activeModal('No encontrado!!')
     })
+    .finally( end =>{
+      console.log('End request')
+      disabledSpinner()
+    })
 }
 
 const activeModal = (text) => {
